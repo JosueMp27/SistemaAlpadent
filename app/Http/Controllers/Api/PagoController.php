@@ -102,14 +102,16 @@ class PagoController extends ApiController
     }
 
     public function show($id)
-    {
-        try {
-            $pago = $this->pagoService->obtenerDetalles((int) $id);
-            return $this->successResponse($pago, 'Pago obtenido correctamente');
-        } catch (\Exception $e) {
-            return $this->errorResponse($e->getMessage(), 500);
-        }
+{
+    try {
+        $pago = $this->pagoService->obtenerDetalles((int) $id);
+        return $this->successResponse($pago, 'Pago obtenido correctamente');
+    } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+        return $this->errorResponse('Pago no encontrado', 404);
+    } catch (\Exception $e) {
+        return $this->errorResponse($e->getMessage(), 500);
     }
+}
 
     public function registrarAbono(StoreAbonoRequest $request)
     {
