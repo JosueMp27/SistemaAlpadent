@@ -284,3 +284,4 @@ class DiagnosticoTest extends TestCase
         $response->assertStatus(401);
     }
 }
+// Pruebas funcionales del modulo de diagnosticos ALPADENT.

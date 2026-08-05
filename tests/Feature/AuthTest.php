@@ -82,3 +82,4 @@ class AuthTest extends TestCase
         $this->assertDatabaseCount('personal_access_tokens', 0);
     }
 }
+// Pruebas funcionales de autenticacion ALPADENT.

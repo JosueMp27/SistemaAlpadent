@@ -373,3 +373,4 @@ class PagoTest extends TestCase
         $response->assertStatus(500);
     }
 }
+// Pruebas funcionales del modulo de pagos ALPADENT.

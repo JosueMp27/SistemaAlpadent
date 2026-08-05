@@ -160,3 +160,4 @@ class PacienteTest extends TestCase
         $response->assertStatus(401);
     }
 }
+// Pruebas funcionales del modulo de pacientes ALPADENT.

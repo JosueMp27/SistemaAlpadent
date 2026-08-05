@@ -269,3 +269,4 @@ class CitaTest extends TestCase
         $response->assertStatus(401);
     }
 }
+// Pruebas funcionales del modulo de citas ALPADENT.
