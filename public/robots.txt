@@ -1,0 +1,4 @@
+# Documentacion de archivo: Archivo publico servido por el navegador o el servidor web antes de entrar al framework.
+# Las lineas siguientes conservan la configuracion original del archivo.
+User-agent: *
+Disallow:
